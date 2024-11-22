@@ -1,0 +1,14 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  cadUsuario in 'cadUsuario.pas' {frmCadastroUsuario};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmCadastroUsuario, frmCadastroUsuario);
+  Application.Run;
+end.
